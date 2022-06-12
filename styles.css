@@ -32,6 +32,10 @@
     left: 2%;
 }
 
+.img2:hover {
+    transform: scale(1.1);
+}
+
 .img2text {
     position: absolute;
     max-width: 160px;

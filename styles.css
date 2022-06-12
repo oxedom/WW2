@@ -1,0 +1,57 @@
+@font-face {
+    font-family: hand;
+    size-adjust: 100%;
+    src: url('./public/handwriting-black-draft_DEMO.otf');
+}
+
+:root {
+    --font1: 'hand';
+    font-size: 20;
+    font-family: var(--font1);
+    background-color: var(--lightgray2);
+    --darkgray: #292F36;
+    --medgray: #5c6166;
+    --lightgray: #8F9296;
+    --lightgray2: #C2C4C6;
+    --bright: #F5F5F5;
+}
+
+
+
+.column {
+    background-color: var(--lightgray);
+    width: max(300px, 50rem);
+    border-radius: 5%;
+}
+
+.form-card {
+
+    background-color: var(--lightgray2);
+    box-shadow: 0px 2px 3px var(--darkgray);
+}
+
+/* For each input card */
+.form-card>div {
+
+    box-shadow: 0px 2px 3px var(--darkgray);
+    width: 300px;
+
+}
+
+.form-card>div>input {
+    border-radius: 18px;
+    padding: 10px;
+    width: 150px;
+    height: 15px;
+}
+
+.split {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.bannerSize {
+    width: 30rem;
+    border-radius: 5%;
+
+}

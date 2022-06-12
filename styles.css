@@ -1,11 +1,19 @@
 @font-face {
     font-family: hand;
+
     size-adjust: 100%;
     src: url('./public/handwriting-black-draft_DEMO.otf');
 }
 
+@font-face {
+    font-family: norse;
+    font-stretch: 50%;
+    src: url('./public/Norse-Bold.otf');
+}
+
 :root {
-    --font1: 'hand';
+    --containersize: 50rem;
+    --boxsize: calc(var(--containersize) * 0.33) --font1: 'norse';
     font-size: 20;
     font-family: var(--font1);
     background-color: var(--lightgray2);
@@ -20,29 +28,57 @@
 
 .column {
     background-color: var(--lightgray);
-    width: max(300px, 50rem);
     border-radius: 5%;
 }
 
 .form-card {
-
+    display: flex;
+    max-width: var(--containersize);
+    height: 500px;
     background-color: var(--lightgray2);
     box-shadow: 0px 2px 3px var(--darkgray);
 }
 
-/* For each input card */
+
+
 .form-card>div {
-
+    max-width: var(--boxsize);
+    flex-wrap: wrap;
+    max-height: 150px;
     box-shadow: 0px 2px 3px var(--darkgray);
-    width: 300px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
 
+.btn-signup {
+    background-color: var(--bright);
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 18px;
+    border: 1px solid black;
+}
+
+.form-card>div:hover {
+    box-shadow: 0 2px 5px 0 var(--darkgray);
 }
 
 .form-card>div>input {
-    border-radius: 18px;
     padding: 10px;
     width: 150px;
     height: 15px;
+}
+
+.form-card>div>input:focus {
+    outline-color: rgb(0, 0, 0);
 }
 
 .split {
@@ -53,5 +89,4 @@
 .bannerSize {
     width: 30rem;
     border-radius: 5%;
-
 }

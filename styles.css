@@ -23,6 +23,12 @@
     --bright: #F5F5F5;
 }
 
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .img2 {
     width: 100px;
@@ -41,12 +47,18 @@
 
 .column {
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: var(--lightgray);
     border-radius: 5%;
     border: 1px solid black;
+}
+
+.column> {
+    max-width: 400px;
+    min-height: auto;
 }
 
 .form-card {

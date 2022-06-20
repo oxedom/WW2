@@ -1,6 +1,5 @@
 @font-face {
     font-family: hand;
-
     size-adjust: 100%;
     src: url('./public/handwriting-black-draft_DEMO.otf');
 }
@@ -26,18 +25,16 @@
 
 
 .img2 {
+    width: 100px;
     position: absolute;
-    max-width: 160px;
-    bottom: 0%;
-    left: 2%;
+    top: 500px;
+    left: 15px;
 }
 
-.img2:hover {
-    transform: scale(1.1);
-}
+
 
 .img2text {
-    position: absolute;
+    position: relative;
     max-width: 160px;
     bottom: 0%;
 }
@@ -53,7 +50,9 @@
 }
 
 .form-card {
-
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     display: flex;
     max-width: var(--containersize);
     height: 300px;
@@ -126,7 +125,11 @@
 }
 
 .bannerSize {
+    background-image: url(./public/img1.png);
     border: 1px solid black;
-    width: 30rem;
+    width: 500px;
+    height: auto;
     border-radius: 5%;
+    background-repeat: no-repeat, repeat;
+    background-color: #cccccc;
 }
